@@ -8,10 +8,11 @@ namespace FittingSorter
 {
     public class FileLoader
     {
-        public static void ParseFile(string file)
+        public static string[] ParseFile(string file)
         {
-            TextReader reader = new StreamReader(file);
-            Console.WriteLine(reader.ReadToEnd());
+            var inputFits = File.ReadAllLines(file);
+
+            return inputFits;
             
         }
     }
