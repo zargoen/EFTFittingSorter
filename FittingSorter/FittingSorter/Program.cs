@@ -1,4 +1,6 @@
-﻿namespace FittingSorter
+﻿using System;
+
+namespace FittingSorter
 {
     public class Program
     {
