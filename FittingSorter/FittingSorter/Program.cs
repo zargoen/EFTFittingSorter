@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace FittingSorter
+﻿namespace FittingSorter
 {
     public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            EFTSorter sorter = new EFTSorter();
+            var sorter = new EFTSorter();
             sorter.Initialize();
             sorter.Execute();
+#if DEBUG
             Console.ReadLine();
+#endif
         }
     }
 }
